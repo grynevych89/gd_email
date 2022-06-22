@@ -1,0 +1,545 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+        
+        P{
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        @font-face {
+        font-family: "Intro";
+        font-weight: 300;
+        font-style: normal;
+        src: url("Intro-Light.ttf") format("opentype");
+        font-display: swap;
+        }
+
+        @font-face {
+        font-family: "Intro";
+        font-weight: 400;
+        font-style: normal;
+        src: url("Intro-Regular.ttf") format("opentype");
+        font-display: swap;
+        }
+
+        [style*="Intro"] {
+            font-family: 'Intro', sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .mobile{
+            display: none;
+        }
+
+        .menu a {
+            color: #FFFFFF;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 20px;
+            text-decoration: none;
+            text-align: right;
+            display: block;
+            padding-top: 17px;
+        }
+
+        .menu td {
+            padding-left: 11px;
+            padding-right: 19px;
+        }
+
+        .logo{
+            padding-top: 27px;
+        }
+
+        hr{
+            background: #FF790A;
+            width: 2px;
+            margin-block-start: 0.7em;
+            margin-block-end: 0;
+            height: 77px;
+            border: 0;
+            margin-left: -4px;
+            margin-right: 11px;
+        }
+
+        .menu-text > p{
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 300;
+        color: #FFFFFF;
+        margin: 0;
+        padding-left: 16px;
+        padding-top: 10px;
+        }
+
+        .header-td {
+            padding-top: 13px;
+            padding-bottom: 27px;
+        }
+
+        .greeting-td {
+            padding-top: 80px;
+        }
+
+        .greeting-td p {
+            color: #000000;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 50px;
+            border-left: 2px solid #FF790A;
+            padding-left: 30px;
+            font-family: "Intro";
+        }
+
+        .blockqoute-td {
+            padding-top: 48px;
+        }
+
+        .block-td{
+            padding-bottom: 433px;
+        }
+        .block-td p {
+            color: #000000;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 34px;
+            padding: 0 15px;
+        }
+
+        .block-table td {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .mailing {
+            padding-top: 19px;
+            padding-bottom: 22px;
+            border-top: 2px solid #D9D9D9;
+        }
+
+        .mailing h3 {
+            margin-top: 20px;
+            color: #686868;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.56px;
+            margin-bottom: 5px;
+        }
+
+        .mailing p {
+            color: #000000;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            margin: 0;
+        }
+        .mailing a {
+            color: #0059E5;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            margin: 0;
+            text-decoration: none;
+        }
+        .footer-td {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+        .footer-logo{
+            padding-left: 5px;
+        }
+        .footer-menu-td a {
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: 'Inter', sans-serif !important;
+            padding: 0 17px;
+        }
+
+
+        @media (max-width: 870px) {
+            .desktop{
+                display: none;
+            }
+            .mobile{
+                display: block !important;
+            }
+            .table-850 {
+                width: 600px !important;
+                display: block !important;
+            }
+
+            .table-600 {
+                width: 550px !important;
+                display: block !important;
+            }
+
+            .block-table {
+                width: 550px !important;
+            }
+            .block-td > table{
+                width: 550px !important;
+            }
+            .block-td p{
+                width: 550px !important;
+            }
+            .block-table p br {
+                display: none !important;
+            }
+
+            .greeting-td td {
+                display: block !important;
+                margin-bottom: 50px !important;
+            }
+            .logo-border{
+                display: none;
+            }
+            .footer-table{
+                width: 157px !important;
+            }
+            .logo {
+                display: block !important;
+                margin: 0 !important;
+                text-align: center !important;
+            }
+            .footer-logo{
+                display: block !important;
+                margin: 12px auto 24px !important;
+            }
+            .menu-table{
+                width: 263px !important;
+            }
+            .menu,.footer-menu-td {
+                display: block !important;
+                margin: 0 auto 12px !important;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .table-850 {
+                width: 400px !important;
+            }
+
+            .table-600 {
+                width: 320px !important;
+            }
+            .greeting-td p{
+                font-size: 34px;
+                font-weight: 300;
+                line-height: 42px;
+                padding-left: 15px;
+            }
+            .logo-border{
+                display: none;
+            }
+            .menu-text{
+                display: block !important;
+            }
+            .block-td {
+                display: block !important;
+                margin-bottom: 50px !important;
+                padding: 0 !important;
+            }
+            .block-td > table{
+                width: 320px !important;
+            }
+            .block-td p{
+                width: 320px !important;
+                padding: 0;
+            }
+            .blockqoute-td tr {
+                display: block !important;
+            }
+
+            .block-table {
+                width: 320px !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+            .footer-table{
+                width: 157px !important;
+            }
+            .logo {
+                display: block !important;
+                margin: 0 !important;
+                text-align: center !important;
+            }
+            .footer-logo{
+                display: block !important;
+                margin: 12px auto 24px !important;
+            }
+            .menu-table{
+                width: 263px !important;
+            }
+            .menu,.footer-menu-td {
+                display: block !important;
+                margin: 0 auto 12px !important;
+            }
+            .mailing {
+                width: 320px !important;
+            }
+
+        }
+
+        @media (max-width: 420px) {
+            .table-850 {
+                width: 300px !important;
+            }
+
+            .table-600 {
+                width: 260px !important;
+            }
+
+            .block-table {
+                width: 260px !important;
+            }
+            .block-td > table{
+                width: 260px !important;
+            }
+            .block-td p{
+                width: 260px !important;
+            }
+            .mailing {
+                width: 260px !important;
+            }
+
+            .blockqoute-td {
+                padding-top: 50px !important;
+                padding-bottom: 50px !important;
+            }
+            .footer-table{
+                width: 157px !important;
+            }
+            .footer-menu-td table {
+                width: 157px !important;
+            }
+            
+            .menu td {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="font-size:0px;font-color:#000000;opacity:0;visibility:hidden;width:0;height:0;display:none;">Заголовок письма</div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ec5483">
+        <tr>
+            <td>
+                <table class="main table-850" cellpadding="0" cellspacing="0" width="905" align="center">
+                    <tr>
+                        <td height="30" width="905"></td>
+                    </tr>
+                    <tr>
+                        <td background="head_title.png" class="header-td desktop" style="background: url('head_title.png') center / cover no-repeat;">
+                            <table class="table-600 menu-table" cellpadding="0" cellspacing="0" width="843" align="center">
+                                <tr>
+                                    <td align="left" class="logo">
+                                        <a href="#" style="text-decoration: none;">
+                                        <img src="logo.png" alt="logo" />
+                                        </a>
+                                    </td>
+                                    <td align="left" class="logo-border">
+                                        <hr>
+                                    </td>
+                                    <td align="left" class="menu-text">
+                                                <p style="font-family: Arial, Helvetica, sans-serif, 'Intro'; margin: 0;">Діджитал агентство <br /> повного циклу</p>
+                                    </td>
+                                    <td align="right" class="menu">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td><a href="tel:+38 (099) 333-22-11" value="+380993332211" style="font-family: Arial, Helvetica, sans-serif, 'Intro'; opacity: 0.5;">+38 (099) 333-22-11</a></td>
+                                                <td align="center">
+                                                    <a href="#" style="opacity: 0.5; text-decoration: none;">
+                                                        <img src="icons\icon1.png" alt="" />
+                                                    </a>
+                                                </td>                                           
+                                            <tr>
+                                                <td><a href="mailto:gd-agency.com.ua" style="font-family: Arial, Helvetica, sans-serif, 'Intro';" class="indent">gd-agency.com.ua</a></td>
+                                                <td align="center">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <img src="icons\icon2.png" alt="" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td background="head_title.png" class="header-td mobile" style="background: url('head_title.png') center / cover no-repeat;">
+                            <table class="table-600 menu-table" cellpadding="0" cellspacing="0" width="843" align="center">
+                                <tr>
+                                    <td align="left" class="logo">
+                                        <img src="logo.png" alt="logo" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="menu-text">
+                                                <p style="font-family: Arial, Helvetica, sans-serif, 'Intro'; margin: 0;">Діджитал агентство <br /> повного циклу</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="menu">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td><a href="tel:+38 (099) 333-22-11" value="+380993332211" style="font-family: Arial, Helvetica, sans-serif, 'Intro'; opacity: 0.5;">+38 (099) 333-22-11</a></td>
+                                                <td align="center">
+                                                    <a href="#" style="opacity: 0.5; text-decoration: none;">
+                                                        <img src="icons\icon1.png" alt="" />
+                                                    </a>
+                                                </td>                                           
+                                            <tr>
+                                                <td><a href="mailto:gd-agency.com.ua" style="font-family: Arial, Helvetica, sans-serif, 'Intro';" class="indent">gd-agency.com.ua</a></td>
+                                                <td align="center">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <img src="icons\icon2.png" alt="" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="greeting-td" bgcolor="#ffffff">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="805" align="center">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Intro';">
+                                            Дякуємо, що звернулися <br/> до GD Studio Digital Agency
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="blockqoute-td" bgcolor="#ffffff">
+                            <table class="table-600" cellpadding="0" cellspacing="0" width="833" align="center">
+                                <tr>
+                                    <td class="block-td">
+                                        <table cellpadding="0" cellspacing="0" width="833" align="center">
+                                            <tr>
+                                                <td>
+                                                    <p style="font-family: Arial, Helvetica, sans-serif, 'Intro';">
+                                                        Шановний Богдан Хмельницький,<br /> 
+                                                        ваша заявка <b>№ 0001</b> на <b>веб-розробку</b> в обробці<br />
+                                                        Незабаром ми зв'яжемося з вами для уточнення інших деталей.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mailing" align="center">
+                                        <p style="font-family: Arial, Helvetica, sans-serif, 'Intro';">Ви отримуєте цю розсилку на bogdan@gmail.com, т.к. клієнт GD studio.</p>
+                                            <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Intro'; text-decoration: none;">
+                                                Відписатися від розсилки.
+                                            </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer-td" bgcolor="#000000">
+                            <table class="table-600 footer-table" cellpadding="0" cellspacing="0" width="830" align="center">
+                                <tr>
+                                    <td class="footer-logo" align="center">
+                                        <a href="#" style="text-decoration: none;">
+                                            <img src="logo-footer.png" alt="logo" />
+                                        </a>
+                                    </td>
+                                    <td class="footer-menu-td" align="center">
+                                        <table cellpadding="0" cellspacing="0" align="center">
+                                            <tr>
+                                                <td align="center" class="footer-menu-td"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Inter'; text-decoration: none;">Хто ми</a></td>
+                                                <td align="center" class="footer-menu-td"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Inter'; text-decoration: none;">Послуги</a></td>
+                                                <td align="center" class="footer-menu-td"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Inter'; text-decoration: none;">Етапи</a></td>
+                                                <td align="center" class="footer-menu-td"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Inter'; text-decoration: none;">Наши роботи</a></td>
+                                                <td align="center" class="footer-menu-td"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Inter'; text-decoration: none;">Контакти</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="footer-menu-td" align="center">
+                                        <table cellpadding="0" cellspacing="0" width="125" align="center">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="#" style="text-decoration: none;">
+                                                    <img src="icons\phone.png" alt="" />
+                                                    </a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <img src="icons\fb.png" alt="" />
+                                                    </a>
+                                                </td>
+                                                <td align="center">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <img src="icons\inst.png" alt="" />
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="30" width="850"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
